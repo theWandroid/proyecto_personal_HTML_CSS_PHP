@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:700&display=swap" rel="stylesheet">
+
+<style>
+
+html{ font-size:18px; }
+
+body{ font-family: Arial, Helvetica, sans-serif;}
+
+
+main{max-width: 1200px; padding: 1rem; margin: 0 auto;;}
+
+
+h1, p{
+    padding-bottom: 1rem;
+}
+
+blockquote, h1{
+text-transform: uppercase;
+}
+
+header{
+border-top:10px solid blue;
+  padding-top: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h1,h2{
+    font-weight: 700;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+h1, blockquote{
+    text-align: center;
+    column-span: all;
+}
+
+p{text-align: justify;
+}
+
+section.col-text{
+    column-count: 2;
+    column-gap: 2rem;
+    column-width: 300px;
+    
+    padding: 1rem 3rem 0 3rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7rem;
+    font-weight: 300;
+    
+}
+
+blockquote{
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.col-img{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px 300px 300px; 
+ grid-gap: 1rem; 
+
+}
+
+h2{
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.col-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+    /* grid-auto-flow: row dense; */
+
+div.pie-foto{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.pie-foto p{
+    padding: 1rem;
+    width: 40%;
+}
+
+img:nth-of-type(1){
+grid-area: 1/1/3/2;
+}
+
+img:nth-of-type(2){
+grid-area: 1/2/2/3;
+}
+
+img:nth-of-type(3){
+grid-area: 3/1/4/2;
+}
+
+img:nth-of-type(4){
+grid-area: 2/2/4/3;
+}
+
+
+@media (max-width:920px){
+   
+    div.pie-foto { width:50%;flex-direction: column;}
+
+    div.pie-foto p{
+    padding: 1rem;
+    width: 90%;
+}
+}
+
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<header><h1>preview</h1></header>
+
+    <main>
+<section class="col-text">
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis, consequuntur possimus corrupti necessitatibus sint eius, sapiente et itaque sit, autem unde quas dicta temporibus adipisci error voluptatibus assumenda harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae ut. Adipisci iusto ut veritatis magni sed laudantium. Quaerat, sequi eveniet! Ducimus dignissimos iste possimus nulla dolor reprehenderit molestiae veritatis?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus excepturi suscipit exercitationem ab rerum rem? Nam nemo a, error provident ut sed cupiditate expedita quia alias dicta perspiciatis unde! Lorem ipsum dolor, sit amet consectetur <h2>adipisicing elit. Nihil quidem laborum necessitatibus ab. Ratione officiis, tempora, nemo recusandae maiores vel quasi, aperiam maxime accusantium veniam aliquam neque</h2> cumque facere? Unde.Quasi iusto sed culpa reprehenderit eligendi. Quae, facere! Cupiditate architecto obcaecati expedita? Aliquam porro expedita sequi obcaecati voluptatibus quaerat ratione omnis ut. Debitis modi veritatis ipsa, officia aliquid in tenetur!</p>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A in aliquid voluptatibus nihil id maxime? Iusto minus ad vel et? Cum doloremque ipsa eius adipisci fuga odit voluptates esse fugit.
+  Nobis excepturi, dignissimos recusandae eveniet natus possimus! Nam sed adipisci illum temporibus assumenda. Voluptatem aliquam optio quas quisquam ea architecto odit iste dignissimos quasi, rem molestias natus ipsum, dolorem deserunt!
+  Quos, mollitia facilis. Reiciendis quasi sunt, maxime facilis laudantium quisquam, illo soluta perspiciatis repellat impedit neque id est dignissimos beatae placeat, facere officia! Debitis incidunt fuga reiciendis obcaecati eos a?
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, mollitia expedita ullam quo ab porro quas itaque debitis officia praesentium omnis, molestias temporibus. Deleniti aspernatur veniam sint eveniet, porro sed.</p>
+
+<blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ex laborum, deleniti a temporibus vitae possimus enim repudiandae sunt beatae asperiores libero? Perferendis nemo minus, eum amet suscipit odio delectus?</blockquote>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis, consequuntur possimus corrupti necessitatibus sint eius, sapiente et itaque sit, autem unde quas dicta temporibus adipisci error voluptatibus assumenda harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae ut. Adipisci iusto ut veritatis magni sed laudantium. Quaerat, sequi eveniet! Ducimus dignissimos iste possimus nulla dolor reprehenderit molestiae veritatis?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus excepturi suscipit exercitationem ab rerum rem? Nam nemo a, error provident ut sed cupiditate expedita quia alias dicta perspiciatis unde! Lorem ipsum dolor, sit amet consecte<h2>tur adipisicing elit. Nihil quidem laborum necessitatibus ab. Ratione officiis, tempora, nemo recusandae maiores vel quasi, aperiam maxime accu</h2>santium veniam aliquam neque cumque facere? Unde.Quasi iusto sed culpa reprehenderit eligendi. Quae, facere! Cupiditate architecto obcaecati expedita? Aliquam porro expedita sequi obcaecati voluptatibus quaerat ratione omnis ut. Debitis modi veritatis ipsa, officia aliquid in tenetur!</p>
+        
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A in aliquid voluptatibus nihil id maxime? Iusto minus ad vel et? Cum doloremque ipsa eius adipisci fuga odit voluptates esse fugit.Nobis excepturi, dignissimos recusandae eveniet natus possimus! Nam sed adipisci illum temporibus assumenda. Voluptatem aliquam optio quas quisquam ea architecto odit iste dignissimos quasi, rem molestias natus ipsum, dolorem deserunt! Quos, mollitia facilis. Reiciendis quasi sunt, maxime facilis laudantium quisquam, illo soluta perspiciatis repellat impedit neque id est dignissimos beatae placeat, facere officia! Debitis incidunt fuga reiciendis obcaecati eos a? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, mollitia expedita ullam quo ab porro quas itaque debitis officia praesentium omnis, molestias temporibus. Deleniti aspernatur veniam sint eveniet, porro sed.</p>
+</section>
+        
+ <header><h1>preview</h1></header>
+
+<section class="col-img">
+<img src="../img/ositoyflor.jpg" alt="">
+<img src="../img/gatitos.jpg" alt="">
+<img src="../img/tigreton.jpg" alt="">
+<img src="../img/rosaylibro.JPG" alt="">
+
+</section>
+<div class="pie-foto">
+
+    
+<p>este es el pie de foto
+este es el pie de foto
+este es el pie de foto</p>
+
+<p> este es el pie de foto
+este es el pie de foto
+este es el pie de foto
+</p>
+
+<p> este es el pie de foto
+        este es el pie de foto
+        este es el pie de foto </p>
+
+<p>este es el pie de foto
+        este es el pie de foto
+        este es el pie de foto</p>
+</div>
+
+    </main>
+
+</body>
+</html>

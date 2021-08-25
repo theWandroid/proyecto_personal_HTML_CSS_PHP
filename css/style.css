@@ -1,0 +1,592 @@
+/* 
+imatges ::: https://www.pexels.com/
+Ideas creativas :: https://www.awwwards.com/
+Paleta de colores:: https://colorhunt.co/
+Editor de svg: :: https://designer.gravit.io/
+Iconos svg ::: https://simpleicons.org
+Comprobar que elementos tengo activados ::: https://html5test.com
+
+
+
+
+
+*/
+    *{box-sizing: border-box;}
+
+    html{
+        font-size: 16px;}
+
+    body, main{
+        display: grid;
+        grid-template-columns: auto;}
+
+    header{
+        display: flex;
+        align-content: space-between;
+        padding: 1rem;
+        color: #fff;
+        border-bottom: #fff solid 2px;
+        text-align: right;}
+
+    header a{width:20%;max-width:200px ;}
+
+    header a img{width:100%;}
+
+    header h1{
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding-left: 2rem;
+        text-shadow: 10px 10px 10px #000;}
+
+    h1,h2{
+        font-size: 1rem;
+        text-transform: uppercase;}
+
+    ul li{padding: 20px;}
+
+    /*  aqui comienza el nav */
+
+    nav{background: #005;
+        display:flex;
+       justify-content: space-between;
+        align-content: center;
+        padding: 10px;}
+
+      nav ul{
+        background: #005;
+        display: flex;
+        flex-direction: column;}
+
+    nav a{display: block;}
+               
+    nav li{text-transform: uppercase;}
+
+    nav a{color: #fff;
+    display: block;
+padding: 0.5rem;}
+
+    nav li:hover{background: #9596cc;}
+       
+nav .logo{
+    padding: 0px;
+    align-self: flex-start;}
+
+nav img{height:50px;}
+
+nav label{
+    padding-top:10px; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+align-self: center;} 
+
+    nav label p{
+        font-size: 4rem;
+        text-align: right;}
+
+    #hamburguer, nav ul li{display: none;}
+            
+    nav input:checked ~ ul li{display: block;}
+            
+    a{text-decoration: none;}
+
+    span.red{color: #f00;}
+    span.green{color: #080;}
+span.blue{color:#00f;}
+    p{  
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    letter-spacing: 3px;
+    font-family: 'Source Sans Pro', sans-serif;}
+
+
+ article.redes {
+        background: #fffff5;
+        display: flex;
+        justify-content: space-between;}
+
+     article.redes div.icons{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;}
+
+     article.redes div.icons div{
+        width: 35px;
+        padding: 7px;}
+    article.redes h2#name{
+        text-transform: lowercase;
+        color: #035200;
+        background: #fffff5;
+        padding: 1rem;
+        font-size: 20px;}
+
+/* /////////////////////////////////////////  index.html   ///////////////////////////////////////////////////*/
+
+    #index header{
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(rgba(2, 0, 0, 0.1),rgba(0, 0, 0, 0.4)), url(../img/pi.jpg) ;
+        background-size: cover;}
+    
+    #index header .centro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 3rem;
+        text-align: center;
+        width: 30%;
+        text-shadow:5px 5px 0  #000 ;
+        font-weight: 900;}
+
+    .flecha{
+        transform: rotate(90deg);
+        font-size: 3.7rem;
+        animation-name: abajo;
+        position: relative;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;}
+
+    .flecha a{color: rgb(104,251,216);}
+
+@keyframes abajo{
+    0% { bottom:0;}
+    100%{bottom:60px;}}
+    
+    #index header h2{
+        align-self: flex-end;
+        font-size: 1rem;
+        width: 16%;}
+
+    #index section{
+        background:linear-gradient(rgba(143, 143, 37, 0.185), #28881f28);
+        height: 500px;
+        align-content: justify;
+    display: flex;
+flex-direction: column;}
+
+    #index section h2{
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        color:rgb(104,0,255);
+        padding-top: 1rem;
+        padding-left: 0.5rem;}
+
+    #index section p{
+        margin: 1rem;
+        padding: 1rem;
+    text-align: justify;}
+
+    #index section div img{
+        overflow: hidden;
+        display: flex;
+        width: 110%;}
+
+    #index section div{
+        height: 200px;
+        display: flex;
+        align-content: center;
+        justify-content: center;}
+
+   
+
+    #index main{
+        background-attachment: fixed;
+        background-position: center -50px;
+        color: #000;}
+
+    #index main a{text-align:justify;
+        font-family: 'Source Sans Pro', sans-serif;
+        width: 200px;
+        margin: 0 auto;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: #000;}
+
+
+        #index div.parrafo{height:300px;}
+
+    /* /////////////////////////////////////////  whoIAm.html ////////////////////////////////////////////////////////////////// */
+
+#whoIam{
+    background-image: url(/img/arboles.jpg);
+    background-size: cover;}
+
+#whoIam header{
+    background-image: url(/img/code.jpg);
+    background-size: cover;
+    height:50vh;
+    text-align: right;
+    font-size: 10rem;}
+
+    #whoIam main{ 
+        width:70%;
+        margin:0 auto;
+        display: grid;
+        grid-template-columns: auto;}
+    
+    #whoIam .lateral {
+        color: #ffffff;
+        background: #005686;
+        padding: 0.5rem 1rem 1rem 0.5rem;}
+    
+    #whoIam h1 {
+        font-size: 4.5rem;
+        text-decoration: underline;
+        color: #0f0fff;}
+    
+    #whoIam h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-decoration: underline;}
+    
+    #whoIam h1, #whoIam h2 {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;}
+         
+    #whoIam p,#whoIam ul{  font-family: 'Source Sans Pro', sans-serif; }
+    
+    #whoIam .main {
+        color: #006;
+            background: #ffffff;
+            padding: 0.5rem 1rem 1rem 0.5rem;}
+          
+    #whoIam article {margin-bottom: 30px;}
+    
+    #whoIam .contact img {
+        width: 20px;
+        margin-right: 10px;
+        vertical-align: 10x;}
+    
+    #whoIam .lateral ul{
+        line-height: 1.5rem;
+        font-size: 1.2rem;}
+
+    #whoIam h2.name{
+        margin:1rem 0;
+        text-align: right;}
+    
+    #whoIam .contact p {
+            line-height: 2rem; }
+    
+    #whoIam .contact p:last-of-type {
+            font-size: 0.64rem;}
+    
+    #whoIam .contact p:first-of-type img {
+            width: 17px;}
+    
+    #whoIam .contact p:last-of-type img {
+            width: 25px;
+            vertical-align: -7px;}
+    
+    #whoIam .icons {
+            display: grid;
+            grid-template-columns: auto auto auto;}
+    
+    #whoIam .icons div{
+        width: 50px;
+        padding: 10px;}
+    
+    #whoIam .icons img {width: 90%;}
+    
+    #whoIam .icons div:nth-of-type(3){width: 40px;}
+    
+    #whoIam .main ul li{
+        line-height: 1.5rem;
+        font-size: 1rem;}
+    
+    #whoIam .hexagon{
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background-image: url(../img/foto-perfil-linkedin.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        margin: 0px auto;
+        height: 210px;
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 5px;}
+    
+    #whoIam .main ul li p{font-size: 1rem;}
+        
+    #whoIam .skills div{
+        display: grid;
+        grid-template-columns: auto auto auto;}
+        
+    #whoIam .skills span{
+        display: inline-block;
+        padding: 12px;
+        background: red;
+        margin: 5px;
+        border-radius: 10px;}
+        
+    #whoIam .skills span:nth-child(even){
+        background: blue;}
+        
+    #whoIam .expertise ul { display: grid;
+        grid-template-columns: auto auto auto;}    
+        
+    #whoIam .expertise span{
+        display: inline-block;
+        padding: 10px;
+        margin:5px;}
+
+        #whoIam .languages li div{
+            display: inline-block;
+            width: 100%;
+            background: red;
+        text-align: center;}
+        
+        #whoIam .languages li:nth-of-type(1) div{width: 75%;}   
+
+        #whoIam .languages li:nth-of-type(2) div{width:77%;}
+
+        #whoIam .languages li:nth-of-type(3) div{width:63%;}   
+
+        #whoIam .languages li:nth-of-type(4) div{width:76%;}  
+        
+/* /////////////////////// projects.html ///////////////////////////////// */
+
+#projects header{
+    background-image: url(/img/9654955.jpg);
+    background-position: center 600px;
+    height: 60vh;}
+
+#projects main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(/img/dawn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}
+
+#projects section{
+   border:2px solid #000;
+    width: 300px;
+    height: 40vh;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 2rem;}
+
+#projects section div{
+    height: 70%;
+    background: #2ff;
+    border-radius: 15px 15px 0 0;}
+
+    #projects section p{
+        font-size: 20px;
+        width:300px;
+        margin:auto auto;
+        text-align: center;
+    }
+
+    #projects section:nth-of-type(1) div{
+        background: url(/img/gridTemplateAreas.png);
+        background-size: cover;
+    background-position: center;}
+
+    #projects section:nth-of-type(2) div{
+        background: url(/img/yingyangCSS.png);
+        background-size: cover;
+        background-position: center;}
+
+#projects section:nth-of-type(3) div{
+    background: url(/img/gridArea.png);
+    background-size: cover;}
+
+#projects section:nth-of-type(4) div{
+    background: url(/img/columnasPreview.png);
+    background-size: cover;
+background-position: center;}
+
+#projects section:nth-of-type(5) div{
+    background: url(/img/tipografia-variable.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
+
+    #projects section:nth-of-type(6) div{
+        background: url(/img/pixelGridCharmander.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;}
+
+    #projects section:nth-of-type(7) div{
+        background: url(/img/figurasCSS.png);
+        background-size: contain;}
+
+    #projects section:nth-of-type(8) div{
+        background: url(/img/flexDados.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;}
+
+#projects section:nth-of-type(9) div{
+    background: url(/img/galeriaFotosGrid.png);
+    background-size: contain;}
+
+#projects main section h2{text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid#000;
+    background: #a0f;}
+    
+/* //////////////// contact.html /////////////////////////////// */
+
+#contact{background:url(/img/nearSea.jpg) , radial-gradient(#fff,#000) ;
+background-size: cover; background-attachment: fixed; background-position: center left;}
+
+#contact header{
+    background-image: url(/img/ositoyflor.jpg);
+    height: 60vh;
+    background-position: center;}
+
+#contact main input,#contact main label, textarea{display: block;}
+
+#contact main input, textarea{
+    border-radius: 15px;
+    padding: 20px;}
+
+#contact main input, #contact main label,  textarea, .boton{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 20px;}
+
+    #contact main label{
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 900;}
+
+    #contact main p{
+        color: #fff;
+        padding-bottom: 30px;}
+
+fieldset{padding: 2rem;border: 2px solid #000; border-radius: 10px;
+    background:radial-gradient(rgba(255, 255, 255, 0.41),rgba(0, 0, 0, 0.721)), url(/img/nearSea.jpg);
+background-size: cover; background-attachment: fixed;
+background-position: center left;}
+
+legend{text-transform: uppercase;
+    padding: 15px;
+    border-radius: 15px;
+    background: #00abc1;
+border: 2px solid #000;}
+
+#contact main{
+    width:60%;
+    margin: 0 auto;
+    padding: 1rem;}
+
+textarea{
+    width:300px;
+    height: 100px;
+    min-width: 200px;
+    max-width: 250px;
+    min-height: 100px;
+    max-height: 200px;}
+
+    .boton{width: 100px;
+        background: #00abc1;
+        text-transform: uppercase;
+       text-align:center;
+        padding: 2px;
+        margin: 20px  auto;
+        font-size:15px;
+        box-sizing: border-box;
+    border: 2px #000 solid; }
+
+/* //////////////////// error404.html */
+
+
+#error404{background-image:url(/img/working.jpg);}
+
+
+
+
+
+
+
+
+
+
+/* //////////////////// mediaqueries ///////////////////////////////////// */
+@media (min-width:719px){
+
+    #index main{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;}
+                
+    #whoIam main {grid-template-columns: 35% 65%;}
+                        
+    header{ 
+        display: flex;
+        align-content: space-between;
+        padding: 0.7rem;
+        color: #fff;
+        border-bottom: #fff solid 2px;
+        text-align: right;}
+                        
+    header h1{font-size: 2rem;}
+
+    #index header h2{font-size: 2rem;}
+
+    .flecha{font-size: 5rem;}
+
+nav{
+  padding: 0px;
+ justify-content: space-between;
+flex-direction: row; }
+
+    nav ul{
+
+    flex-direction: row;
+    justify-content: space-between;}
+
+    nav label{
+        display: none;}
+    
+    nav ul li{
+        display: block;
+        text-align: center;
+        flex:1 1 auto;}
+
+        nav .logo{
+            align-self: flex-start;
+            padding-left: 10px;
+            padding-bottom: 0px;}
+
+        nav .logo{
+        align-self: center;}
+
+        #index section{height: 620px;}
+
+div.hamburguer{flex: 1 1 auto;}
+    
+        nav li:nth-of-type(2){
+            border-left: solid #fff 2px; 
+            border-right: solid #fff 2px; }
+    
+        nav li:nth-of-type(3){border-right: solid #fff 2px; }
+  #index article div.icons div{width: 55px;}}
+
+@media (min-width:1200px){
+        
+    #index main{grid-template-columns: 25% 25% 25% 25%;}
+
+    header{padding: 1rem;}
+                
+    header h1{font-size: 3rem;}
+
+    #index header h2{font-size: 2.5rem;}
+
+    .flecha{font-size: 7rem;}
+    #index main{ background:linear-gradient(rgba(255, 255, 34, 0.082), #f3fff223), url(/img/bigLake.jpg);}
+    #index section{height: 900px;}}
+    

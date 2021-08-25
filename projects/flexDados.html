@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+<style>
+
+    *{
+        box-sizing: border-box;
+        /* outline: 1px solid red; */
+    }
+
+html, body{height: 100%;}
+
+body{
+    background: #0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;}
+
+.dado{
+    border:2px solid #000;
+    border-radius: 10%;
+    height:204px;
+    width:204px;
+    background: #fff;
+    margin:16px;
+    padding: 8px;
+    display: flex;}
+
+.punto{
+    height: 40px;
+    width:40px;
+    background: black;
+    border-radius: 50%;}
+
+.uno {
+    display: flex;
+    align-items: center;
+justify-content: center;}
+
+.dos{
+    display: flex;
+    justify-content: space-between;}
+
+.dos .punto:nth-child(2){
+    display: flex;
+    align-self: flex-end;}
+
+ .tres{
+    display: flex;
+    justify-content: space-between;}  
+
+ .tres .punto:nth-child(2){
+    display: flex;
+    align-self: center;}
+
+ .tres .punto:nth-child(3){
+    display: flex;
+    align-self: flex-end;}
+
+.cuatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}  
+
+.cuatro .botones-up, .cuatro .botones-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
+
+.cuatro .botones-down{display: flex;}
+
+.cinco{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}  
+
+.cinco .botones-up, .cinco .punto-center, .cinco .botones-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
+
+.cinco .botones-down{display: flex;}
+
+.cinco .punto-center{
+    display: flex;
+    align-items: center;
+justify-content: center;}
+
+.seis{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}  
+
+.seis .botones-up, .seis .botones-center, .seis .botones-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
+
+</style>
+
+</head>
+<body>
+    
+        <div class="dado uno"><span class="punto"></span></div>
+
+        <div class="dado dos">
+                <span class="punto"></span>
+                <span class="punto"></span>
+        </div>
+
+        <div class="dado tres">
+                <span class="punto"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+        </div>
+
+        <div class="dado cuatro">
+                <div class="botones-up">
+                    <span class="punto"></span>
+                    <span class="punto"></span></div>
+                <div class="botones-down">
+                    <span class="punto"></span>
+                    <span class="punto"></span>
+                </div>
+        </div>
+
+        <div class="dado cinco">
+            <div class="botones-up">
+                <span class="punto"></span>
+                <span class="punto"></span>
+            </div>
+            <div class="punto-center"> 
+                <span class="punto"></span>
+            </div>
+               
+            <div class="botones-down">
+                <span class="punto"></span>
+                <span class="punto"></span>
+            </div>
+        </div>
+
+        <div class="dado seis">
+            <div class="botones-up">
+                <span class="punto"></span>
+                <span class="punto"></span>
+            </div>
+            <div class="botones-center">
+                <span class="punto"></span>
+                <span class="punto"></span>
+            </div>
+            <div class="botones-down">
+                <span class="punto"></span>
+                <span class="punto"></span>
+            </div>
+        </div>
+    
+</body>
+</html>

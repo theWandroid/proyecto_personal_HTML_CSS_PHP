@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+
+
+<style>
+
+header h1{
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: #000 solid 2px;
+}
+
+main{
+    display: grid; 
+    background: lightcyan;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+grid-template-columns: 200px 200px 200px;
+grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas:  
+    "cap menu menu menu" 
+    "cap main main aside" 
+    "cap main main aside"
+    "footer footer footer aside";} 
+
+div{
+    border: 1px solid black;
+
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-image: url(../img/perrito.jpg);
+    background-attachment: fixed;}
+
+h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;}
+
+div:nth-child(1){grid-area: cap;;}
+
+div:nth-child(2){grid-area: menu;}
+
+div:nth-child(3){ grid-area: main; }
+
+div:nth-child(4){grid-area: aside; }
+
+div:nth-child(5){grid-area: footer;}
+
+</style>
+
+</head>
+
+<body>
+      <header><h1>Grid template areas</h1></header>
+<main>
+   
+<div> <h2>header</h2> </div>
+
+<div><h2> menu</h2></div>
+
+<div> <h2>main</h2> </div>
+<div><h2>aside</h2></div>
+<div><h2>footer</h2></div>
+
+
+</main>
+
+
+
+</body>
+</html>

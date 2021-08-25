@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Figuras css</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <style>
+
+body{
+    background: #dee;
+}
+
+        header,section {
+            border: 1px solid red;}
+            header{padding: 1rem;
+                background: #fff;}
+            header h1{font-size: 2rem;}
+        h1,h2 {
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;}
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px auto;}
+
+        div {
+            margin: 0 auto;
+            margin-bottom: 20px;}
+
+        h2,
+        section {
+            background: #aef;
+            margin: 0 auto;
+            padding: 20px;}
+
+        p {margin: 0 auto;}
+
+        section {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            padding: 20px;}
+
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background: green;}
+
+        .circulo {
+            width: 200px;
+            height: 200px;
+            background: green;
+            border-radius: 50%;}
+
+        .medio-circulo {
+            width: 200px;
+            height: 100px;
+            background: green;
+            border-radius: 100px 100px 0 0;}
+
+        .rombo {
+            width: 80px;
+            height: 80px;
+            background: green;
+            transform: rotate(45deg) skew(15deg, 15deg);
+            margin-bottom: 40px;
+            margin-top: 40px;}
+
+        .gota {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            border-radius: 100% 100% 100% 0;
+            transform: rotate(135deg);
+            margin-top: 50px;}
+
+        .hoja {
+            width: 200px;
+            height: 200px;
+            background: green;
+            border-radius: 100% 0 100% 0;
+            transform: rotate(135deg);
+            margin-top: 50px;
+            margin-bottom: 50px;}
+
+        .limon {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            border-radius: 50% 20% 50% 20%;
+            transform: rotate(135deg);
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-image: url(adventure-altitude-beautiful-372960.jpg);}
+
+        .triangulo {
+            width: 0;
+            height: 0;
+            background: transparent;
+            border-left: 150px solid lightblue;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            transform: rotate(270deg);
+            margin-top: 50px;
+            margin-bottom: 60px;}
+
+        .triangulo-color {
+            width: 0;
+            height: 0;
+            background: transparent;
+            border-left: 150px solid lightblue;
+            border-top: 50px solid black;
+            border-bottom: 50px solid violet;
+            transform: rotate(270deg);
+            margin-top: 50px;
+            margin-bottom: 60px;
+            background-image: url(adventure-altitude-beautiful-372960.jpg);}
+
+        .huevo {
+            width: 200px;
+            height: 280px;
+            background: lightsalmon;
+            border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-image: url(adventure-altitude-beautiful-372960.jpg);}
+
+        .ribbon{
+            width: 0;
+            height: 120px;
+            border-left: 50px solid bisque;
+            border-right:  50px solid bisque;
+            border-bottom: 50px solid transparent;
+            transform: rotate(90deg);}
+        
+        .comecocos{
+            width: 0;
+            height: 0;
+            border-radius: 100px;
+            border-top: 100px solid orange;
+            border-left: 100px solid orange;
+            border-right:  100px solid transparent;
+            border-bottom: 100px solid orange;}
+
+        .comecocos:hover{border-right:  100px solid orange;}
+
+        .hipno {
+            width: 200px;
+            height: 200px;
+            background: white;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+
+        .c1 {
+            width: 90%;
+            height: 90%;
+            background: black;
+            border-radius: 50%;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+
+        .c2 {
+            width: 80%;
+            height: 80%;
+            background: white;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+
+        .c3 {
+            width: 70%;
+            height: 70%;
+            background: black;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>dibujos básicos con css</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>cuadrado</h2>
+            <div class="cuadrado"></div>
+            <p> 200px x 200px</p>
+        </section>
+
+        <section>
+            <h2>circulo</h2>
+            <div class="circulo"></div>
+            <p>200px x 200px</p>
+            <p>border-radius: 50%;</p>
+        </section>
+        <section>
+            <h2>medio círculo</h2>
+            <div class="medio-circulo"></div>
+            <p> 200px x 100px</p>
+            <p>border-radius: 100px 100px 0 0;</p>
+        </section>
+
+        <section>
+            <h2>rombo</h2>
+            <div class="rombo"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+        </section>
+
+        <section>
+            <h2>gota</h2>
+            <div class="gota"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+        </section>
+
+        </section>
+        <section>
+
+            <h2>hoja</h2>
+            <div class="hoja"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+
+        </section>
+
+        <section>
+            <h2>limón</h2>
+            <div class="limon"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+        </section>
+
+        <section>
+            <h2>triangulo</h2>
+            <div class="triangulo"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+        </section>
+
+        <section>
+            <h2>triangulo de color</h2>
+            <div class="triangulo-color"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+        </section>
+
+        <section>
+            <h2>huevo</h2>
+            <div class="huevo"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+        </section>
+
+        <section>
+            <h2>ribbon</h2>
+            <div class="ribbon"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+        </section>
+
+        <section>
+            <h2>comecocos</h2>
+            <div class="comecocos"></div>
+            <p>80px x 80px</p>
+            <p>transform: rotate (45deg)</p>
+        </section>
+
+
+
+        <section>
+            <h2>rueda hipnotica</h2>
+            <div class="hipno">
+                <div class="c1">
+                    <div class="c2">
+                        <div class="c3">
+                            <div class="c4">
+                                <div class="c5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>work in progress</p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

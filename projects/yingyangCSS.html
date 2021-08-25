@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ying-yang</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+<style>
+
+    body{height: 100vh;}
+
+header h1{font-size: 2rem;
+text-align: center;
+text-transform: uppercase;
+padding: 2rem;
+text-decoration: underline;}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 80vh;
+    background-color: lightslategray;}
+
+.ying-yang{
+    display: flex;
+    width: 400px; 
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(black 50%, white 0);
+    align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+    animation: rotation 2s infinite linear;}
+
+@keyframes rotation {
+		from {transform: rotate(0deg);
+		}to {transform: rotate(359deg);}}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;}
+
+.ying{
+    width: 200px;
+    height:200px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+ .punto-ying, .punto-yang{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;}   
+
+.yang{
+    width: 200px;
+    height:200px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.punto-ying{background: black;}
+
+.punto-yang{background: white;;}   
+
+</style>
+
+</head>
+<body>
+
+    <header><h1>Ying-yang</h1></header>
+<main>
+    
+    <div class="ying-yang">
+        <div class="blanco">
+            <div class="contenedor">
+                <div class="ying">
+                    <div class="punto-ying"></div>
+                </div>
+                <div class="yang">
+                    <div class="punto-yang"></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</main>
+    
+</body>
+</html>
