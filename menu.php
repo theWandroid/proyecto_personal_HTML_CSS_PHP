@@ -14,10 +14,10 @@
            
                
            <ul>
-               <li><a href="whoIAm.php">Who I Am</a></li>
-               <li><a href="projects.php">Projects</a></li>
-               <li><a href="error404.php">Collaborate</a></li>
-               <li><a href="contact.php">Contact Me</a></li>
+               <li><a href="whoIAm.html">Who I Am</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="error404.html">Collaborate</a></li>
+               <li><a href="contact.html">Contact Me</a></li>
            </ul>
     </div>
    </nav>
